@@ -23,3 +23,10 @@ date || credit || debit || balance
 13/01/2023 || 2000.00 || || 3000.00
 10/01/2023 || 1000.00 || || 1000.00
 ```
+
+## Design
+
+### Planning/Preparation
+
+See I/O and Class Models [here](https://docs.google.com/spreadsheets/d/1LCohqfYhAP2VekmvqACULLQWGYk3ixapEKr2JmXUamI/edit#gid=0)
+
