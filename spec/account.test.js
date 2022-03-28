@@ -24,7 +24,7 @@ describe("withdraw", () => {
   });
 });
 
-describe("recordTransaction", () => {
+describe("getTransactions", () => {
   it("should store a transaction within an array of transactions when completed", () => {
     account.deposit(100)
     expect(account.getTransactions().length).toEqual(1)
