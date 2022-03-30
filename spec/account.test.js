@@ -20,7 +20,7 @@ describe("withdraw", () => {
 
 describe("getTransactions", () => {
   it("should store a transaction within an array of transactions when completed", () => {
-    account.deposit(100)
+    account.deposit(100, "28-03-2022")
     expect(account.transactions.length).toEqual(1)
   });
 });
