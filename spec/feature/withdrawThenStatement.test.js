@@ -1,4 +1,4 @@
-const Account = require('../../lib/account')
+const Account = require("../../lib/account");
 
 beforeEach(() => {
   account = new Account();
@@ -6,7 +6,9 @@ beforeEach(() => {
 
 describe("Make a Deposit then return a statement showing it", () => {
   it("should return a statement when transactions recorded", () => {
-    account.withdraw(1000, "10-01-2023")
-    expect(account.requestStatement()).toEqual("date || credit || debit || balance\r\n10/01/2023 || || 1000.00 || -1000.00")
+    account.withdraw(1000, "10-01-2023");
+    expect(account.requestStatement()).toEqual(
+      "date || credit || debit || balance\r\n10/01/2023 || || 1000.00 || -1000.00"
+    );
   });
 });

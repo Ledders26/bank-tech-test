@@ -4,10 +4,10 @@
 
 ### Requirements
 
-* You should be able to interact with your code via a REPL like IRB or Node. (You don't need to implement a command line interface that takes input from STDIN.)
-* Deposits, withdrawal.
-* Account statement (date, amount, balance) printing.
-* Data can be kept in memory (it doesn't need to be stored to a database or anything).
+- You should be able to interact with your code via a REPL like IRB or Node. (You don't need to implement a command line interface that takes input from STDIN.)
+- Deposits, withdrawal.
+- Account statement (date, amount, balance) printing.
+- Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
 ### Acceptance criteria
 
@@ -30,7 +30,6 @@ date || credit || debit || balance
 
 See I/O and Class Models [here](https://docs.google.com/spreadsheets/d/1LCohqfYhAP2VekmvqACULLQWGYk3ixapEKr2JmXUamI/edit#gid=0)
 
-
 ## Functionality
 
 Clone this repo, then change into the directory:
@@ -38,6 +37,7 @@ Clone this repo, then change into the directory:
 ```
 git clone https://github.com/Ledders26/bank-tech-test.git
 cd bank-tech-test
+npm install
 ```
 
 ### How to Test
@@ -70,4 +70,12 @@ account.requestStatement()
 
 ## Process
 
-I followed a TDD process from start to finish, and aimed to commit to git whenever I had a passing test.  I did some initial planning, as detailed above in the planning section, but as often is the case, the final product ends up slightly different as a solution evolves.
+I followed a TDD process from start to finish, and aimed to commit to git whenever I had a passing test. I did some initial planning, as detailed above in the planning section, but as often is the case, the final product ends up slightly different as a solution evolves.
+
+Initially I had expected to have a single class, but quite quickly during design I realised that I needed a separate one for formatting a statement.
+
+## Screenshot
+
+This is a screenshot of the app running through the acceptance criteria:
+
+[screenshot](public/screenshot.png)
