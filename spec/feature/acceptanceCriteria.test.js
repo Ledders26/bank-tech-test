@@ -1,4 +1,3 @@
-const Statement = require('../../lib/statement')
 const Account = require('../../lib/account')
 
 beforeEach(() => {
