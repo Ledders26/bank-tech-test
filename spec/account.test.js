@@ -10,14 +10,14 @@ beforeEach(() => {
 describe("deposit", () => {
   it("should allow money to be deposited into the account and update the balance", () => {
     account.deposit(30, "28-03-2022");
-    expect(account.balance).toEqual(30);
+    expect(account.transactions.length).toEqual(1);
   });
 });
 
 describe("withdraw", () => {
   it("should allow money to be withdrawn from the account and the balance updated", () => {
     account.withdraw(30, "28-03-2022");
-    expect(account.balance).toEqual(-30);
+    expect(account.transactions.length).toEqual(1);
   });
 });
 
