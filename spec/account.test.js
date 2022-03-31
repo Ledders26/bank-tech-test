@@ -1,7 +1,5 @@
 const Account = require("../lib/account");
-const Statement = require("../lib/statement")
-
-
+const Statement = require("../lib/statement");
 
 beforeEach(() => {
   account = new Account();
@@ -30,7 +28,7 @@ describe("getTransactions", () => {
 
 describe("requestStatement", () => {
   it("should create a new Statement when requested", () => {
-    const printStatement = jest.spyOn(Statement.prototype, "printStatement")
+    const printStatement = jest.spyOn(Statement.prototype, "printStatement");
     account.requestStatement();
     expect(printStatement).toBeCalled();
   });
